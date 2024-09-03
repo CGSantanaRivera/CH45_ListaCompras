@@ -7,7 +7,7 @@ const tablaListaCompras = document.getElementById("tablaListaCompras");
 const cuerpoTabla = tablaListaCompras.getElementsByTagName("tbody").item(0);
 const contadorProductos = document.getElementById("contadorProductos");
 const productosTotal = document.getElementById("productosTotal");
-const preciosTotal = document.getElementById("preciosTotal");
+const precioTotal = document.getElementById("precioTotal");
 
 
 // Bandera, al ser true permite agregar los datos a la tabla
@@ -75,7 +75,7 @@ btnAgregar.addEventListener("click", function (event){
         totalEnProductos += Number(txtNumber.value);
         contadorProductos.innerText = contador;
         productosTotal.innerText=totalEnProductos;
-        preciosTotal.innerText ="$ " + costoTotal.toFixed(2);
+        precioTotal.innerText ="$ " + costoTotal.toFixed(2);
 
         localStorage.setItem("contador", contador);
         localStorage.setItem("totalEnProductos", totalEnProductos);
@@ -110,5 +110,5 @@ window.addEventListener("load", function(){
     };//!null
     contadorProductos.innerText = contador;
     productosTotal.innerText=totalEnProductos;
-    preciosTotal.innerText ="$ " + costoTotal.toFixed(2);
+    precioTotal.innerText ="$ " + costoTotal.toFixed(2);
 });//windows load
