@@ -75,7 +75,7 @@ btnAgregar.addEventListener("click", function (event){
         totalEnProductos += Number(txtNumber.value);
         contadorProductos.innerText = contador;
         productosTotal.innerText=totalEnProductos;
-        precioTotal.innerText ="$ " + costoTotal.toFixed(2);
+        preciosTotal.innerText ="$ " + costoTotal.toFixed(2);
 
         localStorage.setItem("contador", contador);
         localStorage.setItem("totalEnProductos", totalEnProductos);
@@ -110,5 +110,5 @@ window.addEventListener("load", function(){
     };//!null
     contadorProductos.innerText = contador;
     productosTotal.innerText=totalEnProductos;
-    precioTotal.innerText ="$ " + costoTotal.toFixed(2);
+    preciosTotal.innerText ="$ " + costoTotal.toFixed(2);
 });//windows load
